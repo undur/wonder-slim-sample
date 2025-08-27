@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>slim</groupId>
+	<artifactId>SlimSample</artifactId>
+	<packaging>woapplication</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>SlimSample WebObjects Application</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>is.rebbi</groupId>
+				<artifactId>vermilingua-maven-plugin</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>21</source>
+					<target>21</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>wonder.core</groupId>
+			<artifactId>ERExtensions</artifactId>
+			<version>8.0.0.slim-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>wonder.ajax</groupId>
+			<artifactId>Ajax</artifactId>
+			<version>8.0.0.slim-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>wonder.core</groupId>
+			<artifactId>ERLoggingReload4j</artifactId>
+			<version>8.0.0.slim-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.webobjects</groupId>
+			<artifactId>JavaWebObjects</artifactId>
+			<version>5.4.3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.webobjects</groupId>
+					<artifactId>JavaXML</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>
