@@ -29,19 +29,19 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>wonder.core</groupId>
+			<groupId>is.rebbi.slim</groupId>
 			<artifactId>ERExtensions</artifactId>
-			<version>8.0.0.slim-SNAPSHOT</version>
+			<version>8.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>wonder.ajax</groupId>
+			<groupId>is.rebbi.slim</groupId>
 			<artifactId>Ajax</artifactId>
-			<version>8.0.0.slim-SNAPSHOT</version>
+			<version>8.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>wonder.core</groupId>
+			<groupId>is.rebbi.slim</groupId>
 			<artifactId>ERLoggingReload4j</artifactId>
-			<version>8.0.0.slim-SNAPSHOT</version>
+			<version>8.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.webobjects</groupId>
