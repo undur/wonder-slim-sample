@@ -11,6 +11,9 @@
 	<properties>
 		<maven.compiler.release>25</maven.compiler.release>
 
+		<wonder.group>is.rebbi.slim</wonder.group>
+		<wonder.version>8.0.0</wonder.version>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -29,19 +32,19 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>is.rebbi.slim</groupId>
+			<groupId>${wonder.group}</groupId>
 			<artifactId>ERExtensions</artifactId>
-			<version>8.0.0-SNAPSHOT</version>
+			<version>${wonder.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>is.rebbi.slim</groupId>
+			<groupId>${wonder.group}</groupId>
 			<artifactId>Ajax</artifactId>
-			<version>8.0.0-SNAPSHOT</version>
+			<version>${wonder.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>is.rebbi.slim</groupId>
+			<groupId>${wonder.group}</groupId>
 			<artifactId>ERLoggingReload4j</artifactId>
-			<version>8.0.0-SNAPSHOT</version>
+			<version>${wonder.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.webobjects</groupId>
