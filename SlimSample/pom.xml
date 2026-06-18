@@ -38,7 +38,7 @@
 		</dependency>
 		<dependency>
 			<groupId>${wonder.group}</groupId>
-			<artifactId>Ajax</artifactId>
+			<artifactId>AjaxSlim</artifactId>
 			<version>${wonder.version}</version>
 		</dependency>
 		<dependency>
