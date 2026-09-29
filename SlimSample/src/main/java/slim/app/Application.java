@@ -36,9 +36,5 @@ public class Application extends ERXApplication {
 		routes.map( "/also-main", routeRequest -> {
 			return pageWithName( Main.class, routeRequest.context() );
 		} );
-
-		// Mapping the default URL a WO app will open at in direct connect mode.
-		// NOTE: This is really redundant — you should really just open the app to the root, "/", during development
-		routes.map( "/cgi-bin/WebObjects/SlimSample.woa", Main.class );
 	}
 }
